@@ -1,0 +1,67 @@
+#
+# ~/.zsh
+#
+
+(cat "$HOME/.cache/wal/sequences" &)
+
+#git clone
+alias gc="git clone"
+
+alias gitpull="find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | xargs -I {} git -C {} pull"
+
+gitpush() {
+    git pull
+    git add -u
+    git add --all .
+    input="update"
+    git commit -m "$input"
+    git push --force -u origin master
+}
+alias gp=gitpush
+
+
+#No messages in virtualbox
+alias vbmessage='VBoxManage setextradata global GUI/SuppressMessages "all"'
+
+alias scr='scrot -d 3 -c ~/Pictures/Scrot-$(date +%Y.%m.%d-%H.%M.%S).jpg'
+
+#########################################################################################
+##### This will copy all your personal settings into place ##############################
+#########################################################################################
+customsettings() {
+    sudo chmod -R 755 /personal-twist/personal-home/*
+    cp -Rf /personal-twist/personal-home/* ~
+    sudo chmod -R 755 /personal-twist/personal-root/*
+    sudo cp -Rf /personal-twist/personal-root/* /
+    sed -i -e 's/neofetch/sfetch/g' .bashrc
+    sed -i -e 's/neofetch/sfetch/g' .zshrc
+    sed -i -e 's/="random"/="Lastbobo"/g' .zshrc
+    sudo chsh $USER -s /bin/zsh
+    sudo /usr/local/bin/arcolinux-vbox-share
+    VBoxManage setextradata global GUI/SuppressMessages "all"
+    echo 'All your personal configs , cursors , backgrounds... are in place. Now log out to activate them.' 
+}
+alias custom=customsettings
+#########################################################################################
+#########################################################################################
+
+#########################################################################################
+#########This will reset ArcolinuxB-i3 to its standard settings##########################
+#########################################################################################
+standardsettings() {
+    sudo cp -rf /etc/skel/* ~
+    sudo cp -Rf /personal-twist/standard-home/.config/arcologout/* ~/.config/arcologout/
+    sudo chmod -R 755 /personal-twist/standard-root/*
+    sudo cp -Rf /personal-twist/standard-root/* /
+    sed -i -e 's/sfetch/neofetch/g' .bashrc
+    sed -i -e 's/sfetch/neofetch/g' .zshrc
+    sudo chsh $USER -s /bin/bash
+    sed -i -e 's/="Lastbobo"/="random"/g' .zshrc
+    echo 'All the standard settings are back in place. Now log out to activate them.'    
+}
+alias standard=standardsettings
+##########################################################################################
+##########################################################################################
+
+alias edubois='yt-dlp --download-archive ~/Videos/edubois.txt -f best -citw -v https://www.youtube.com/ErikDubois'
+alias redubois='yt-dlp --playlist-reverse --download-archive ~/Videos/edubois.txt -f best -ciw -o "%(upload_date)s - %(title)s.%(ext)s" -v https://www.youtube.com/ErikDubois'

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Juno-mango
+Comment=GTK themes inspired by epic vscode themes
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Juno-mango
+MetacityTheme=Juno-mango
+IconTheme=candy-icons
+ButtonLayout=:minimize,maximize,close

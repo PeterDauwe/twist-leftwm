@@ -1,0 +1,22 @@
+background_opacity: 0.7
+font:
+  # Normal (roman) font face
+  normal:
+    family: Monospace
+    # The `style` can be specified to pick a specific face.
+    #style: Regular
+
+  # Bold font face
+  bold:
+    family: Monospace
+    # The `style` can be specified to pick a specific face.
+    #style: Bold
+
+  # Italic font face
+  italic:
+    family: Monospace
+    # The `style` can be specified to pick a specific face.
+    #style: Italic
+
+  # Point size
+  size: 11.0
