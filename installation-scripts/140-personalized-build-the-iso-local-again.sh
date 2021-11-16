@@ -288,6 +288,7 @@ echo
 	echo "Iso build on : "$date_build
 	sudo sed -i "s/\(^ISO_BUILD=\).*/\1$date_build/" $buildFolder/archiso/airootfs/etc/dev-rel
 
+
 #echo
 #echo "################################################################## "
 #tput setaf 2
