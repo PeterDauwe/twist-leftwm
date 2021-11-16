@@ -48,8 +48,7 @@ echo
 	arcolinuxVersion='v22.01.01'
 
 	TwistVersion=$(date +%y).$(date +%m).$(date +%d)
-
-	isoLabel='twist-'$desktop'-'$TwistVersion'-x86_64.iso'
+	isoLabel='twist-'$desktop'-v'$TwistVersion'-x86_64.iso'
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 58-2"
