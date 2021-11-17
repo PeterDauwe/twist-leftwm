@@ -17,11 +17,14 @@
 
 
 # After the installation of a 230-personalized-build-the-iso.
-	Typ in a terminal : personal (this will copy a .bashrc-personal and a .zsh-personal to your system)
+	Typ in a terminal : personal
+	 (this will copy a .bashrc-personal and a .zsh-personal to your system)
 
-	On reload typ in a terminal : custom (this will set all icons, themes, and settings of twist-leftwm in place)
+	On reload typ in a terminal : custom
+	 (this will set all icons, themes, and settings of twist-leftwm in place)
 
-	To undo this : typ in a terminal : standard and you will have the Arcolinux-Leftwm settings again
+	To undo this : typ in a terminal : standard
+	 and you will have the Arcolinux-Leftwm settings again
 
 
 Hope you like this, it was fun to make.
