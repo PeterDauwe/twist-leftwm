@@ -1,6 +1,6 @@
 # Twist BYOI Leftwm desktop
 
-![Twist-Leftwm](https://ibb.co/M5N5M38)
+![Twist-Leftwm](https://github.com/PeterDauwe/twist-leftwm/blob/master/twist_leftwm.png)
 
 
 # Get your code to build your own iso
