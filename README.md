@@ -1,9 +1,7 @@
 # Twist BYOI Leftwm desktop
 
-![Twist-Leftwm](https://imgur.com/a/OCx4tyr)
+![Twist-Leftwm](https://ibb.co/M5N5M38)
 
-
-https://imgur.com/a/OCx4tyr
 
 # Get your code to build your own iso
 
