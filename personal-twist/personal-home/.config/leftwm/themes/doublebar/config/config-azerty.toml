@@ -9,10 +9,15 @@ tags = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 #tags = ["www", "edit", "gimp", "inkscape", "meld", "video","vm", "files", "music"]
 
 layouts = ["MainAndVertStack", "MainAndHorizontalStack", "MainAndDeck", "GridHorizontal", "EvenHorizontal", "EvenVertical", "Fibonacci", "CenterMain", "CenterMainBalanced", "Monocle", "RightWiderLeftStack", "LeftWiderRightStack"]
-scratchpad = []
+#scratchpad = []
 disable_current_tag_swap = true
-focus_behaviour = "Sloppy"
+#focus_behaviour = "Sloppy"
+focus_behaviour = "ClickTo"
 focus_new_windows = true
+
+[[scratchpad]]
+name = "MainTerminal" # This is the name which is referenced when calling (case-sensitive)
+value = "xfce4-terminal" # The command to load the application if it isn't started
 
 [[keybind]]
 command = "Execute"
@@ -21,8 +26,8 @@ modifier = ["modkey"]
 key = "c"
 
 [[keybind]]
-command = "Execute"
-value = "xfce4-terminal --drop-down"
+command = "ToggleScratchPad"
+value = "MainTerminal"
 modifier = []
 key = "F12"
 
