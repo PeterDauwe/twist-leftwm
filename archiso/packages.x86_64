@@ -464,7 +464,7 @@ mkinitcpio-openswap
 
 ###utilities-repo
 alacritty
-appstreams
+appstream
 archiso
 conky-lua-archers
 downgrade
