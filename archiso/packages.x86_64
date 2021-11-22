@@ -11,7 +11,7 @@ arch-install-scripts
 base
 bind-tools
 #brltty
-broadcom-wl
+broadcom-wl-dkms
 btrfs-progs
 clonezilla
 #cloud-init
@@ -86,7 +86,7 @@ partimage
 pcsclite
 ppp
 pptpclient
-#pv
+pv
 qemu-guest-agent
 reflector
 reiserfsprogs
@@ -122,12 +122,15 @@ xfsprogs
 xl2tpd
 
 ###archiso-extra
+aic94xx-firmware
 dialog
 dnsutils
 grub
 linux-headers
 logrotate
 ntp
+upd72020x-fw
+wd719x-firmware
 wget
 
 ###xorg
@@ -163,7 +166,7 @@ mesa
 #bumblebee
 #optimus-manager
 #optimus-manager-qt
-nvidia
+nvidia-dkms
 nvidia-utils
 nvidia-settings
 #libva-intel-driver
@@ -461,8 +464,8 @@ mkinitcpio-openswap
 
 ###utilities-repo
 alacritty
-appstream
-#archiso
+appstreams
+archiso
 conky-lua-archers
 downgrade
 #font-manager-git
