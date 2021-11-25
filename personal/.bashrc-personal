@@ -2,7 +2,8 @@
 # ~/.bashrc
 #
 
-(cat "$HOME/.cache/wal/sequences" &)
+#more sensitive data
+[[ -f ~/.bashrc-private ]] && . ~/.bashrc-private
 
 #git clone
 alias gc="git clone"
@@ -63,5 +64,3 @@ alias standard=standardsettings
 ##########################################################################################
 ##########################################################################################
 
-alias edubois='yt-dlp --download-archive ~/Videos/edubois.txt -f best -citw -v https://www.youtube.com/ErikDubois'
-alias redubois='yt-dlp --playlist-reverse --download-archive ~/Videos/edubois.txt -f best -ciw -o "%(upload_date)s - %(title)s.%(ext)s" -v https://www.youtube.com/ErikDubois'
