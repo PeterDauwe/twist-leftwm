@@ -7,6 +7,10 @@
 #more sensitive data
 [[ -f ~/.zshrc-private ]] && . ~/.zshrc-private
 
+
+alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
+
+
 #git clone
 alias gc="git clone"
 
