@@ -45,13 +45,13 @@ echo
 	desktop="leftwm"
 	dmDesktop="leftwm"
 
-	arcolinuxVersion='v22.01.01'
+	arcolinuxVersion='v22.01.02'
 
 	TwistVersion=$(date +%y).$(date +%m).$(date +%d)
 	isoLabel='twist-'$desktop'-v'$TwistVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 58-2"
+	archisoRequiredVersion="archiso 59-1"
 	buildFolder=$HOME"/twist-build"
 	outFolder=$HOME"/Twist-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
@@ -74,11 +74,11 @@ echo
 		tput sgr0
 	else
 	tput setaf 1
-	echo "####################################################################"
+	echo "###################################################################################################"
 	echo "You need to install the correct version of Archiso"
 	echo "Use 'sudo downgrade archiso' to do that"
 	echo "or update your system"
-	echo "####################################################################"
+	echo "###################################################################################################"
 	tput sgr0
 	sn2
 	exit 1
@@ -97,7 +97,7 @@ echo
 
 	package="archiso"
 
-	#-------------------------------------------------------------------------
+	#----------------------------------------------------------------------------------
 
 	#checking if application is already installed or else install with aur helpers
 	if pacman -Qi $package &> /dev/null; then
