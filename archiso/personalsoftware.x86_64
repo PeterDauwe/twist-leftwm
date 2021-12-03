@@ -3,6 +3,8 @@ bat
 brasero
 discord
 etcher-bin
+exa
+fish
 flameshot-git
 freetube-bin
 gimp
@@ -11,8 +13,10 @@ light
 meld
 python-pywal
 qt5-graphicaleffects
+shell-color-scripts
 simplescreenrecorder
 smplayer
+starship
 sublime-text-4
 the_platinum_searcher-bin
 unclutter

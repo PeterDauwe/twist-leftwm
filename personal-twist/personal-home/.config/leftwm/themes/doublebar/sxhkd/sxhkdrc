@@ -224,6 +224,11 @@ ctrl + alt + a
 # ALT + ... KEYS
 #################################################################
 
+#Lock screen
+alt + l
+    ~/.config/leftwm/themes/current/scripts/betterlock.sh
+
+
 #Wallpaper trash
 alt + t
     variety -t
