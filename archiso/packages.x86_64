@@ -297,8 +297,8 @@ numlockx
 #qbittorrent
 scrot
 #simplescreenrecorder
-termite
-variety
+#termite
+#variety
 #vlc
 
 ###conky
@@ -339,6 +339,7 @@ arandr
 asciinema
 bash-completion
 #baobab
+bat
 #catfish
 #cronie
 dconf-editor
@@ -381,6 +382,7 @@ mlocate
 #nomacs
 oh-my-zsh-git
 p7zip
+pkgfile
 #plank
 playerctl
 polkit
@@ -800,7 +802,7 @@ arcolinux-sddm-simplicity-git
 #                         PICOM OR COMPTON
 ###########################################################################
 
-picom
+#########picom
 
 ###########################################################################
 #                         GENERAL DESKTOP RELATED
