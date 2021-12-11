@@ -130,6 +130,7 @@ dnsutils
 linux-headers
 logrotate
 ntp
+r8168-dkms
 upd72020x-fw
 wd719x-firmware
 wget
@@ -172,7 +173,7 @@ nvidia-utils
 nvidia-settings
 #libva-intel-driver
 #libva-vdpau-driver
-#mesa-demos
+mesa-utils
 #mesa-vdpau
 #opencl-mesa
 #primus
@@ -802,7 +803,7 @@ arcolinux-sddm-simplicity-git
 #                         PICOM OR COMPTON
 ###########################################################################
 
-#########picom
+picom
 
 ###########################################################################
 #                         GENERAL DESKTOP RELATED
