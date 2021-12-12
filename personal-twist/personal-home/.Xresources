@@ -2,7 +2,9 @@
 ! URxvt standard arcolinux theme - Reload with xrdb -merge ~/.Xresources
 ! or alias merge
 ! ------------------------------------------------------------------------------
-Xft.dpi: 96
+
+! Xorg issue nov 2021 - use and change if needed
+ Xft.dpi:   96
 
 ! general settings
 URxvt.saveLines:        50000
@@ -44,6 +46,7 @@ URxvt.colorUL:      	 #87afd7
 ! special
 *.foreground:   #F9F9F9
 
+URxvt.foreground:   #F9F9F9
 URxvt.background:   [80]#222222
 !URxvt.background:	#000000
 !URxvt.background:  rgba:2222/2222/2222/AAAA
@@ -201,7 +204,7 @@ UXTerm*toolBar:            false
 
 ! fix colors
 UXTerm*background: rgb:63/63/63
-UXTerm*foreground: rgb:00/00/00
+UXTerm*foreground: rgb:f9/f9/f9
 UXTerm*color0: rgb:3f/3f/3f
 UXTerm*color1: rgb:cc/00/00
 UXTerm*color2: rgb:4e/9a/06

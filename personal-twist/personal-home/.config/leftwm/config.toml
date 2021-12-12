@@ -9,16 +9,28 @@ tags = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 #tags = ["www", "edit", "gimp", "inkscape", "meld", "video","vm", "files", "music"]
 
 layouts = ["MainAndVertStack", "MainAndHorizontalStack", "MainAndDeck", "GridHorizontal", "EvenHorizontal", "EvenVertical", "Fibonacci", "CenterMain", "CenterMainBalanced", "Monocle", "RightWiderLeftStack", "LeftWiderRightStack"]
-#scratchpad = []
+scratchpad = []
+#[[scratchpad]]
+#name = "MainTerminal" # This is the name which is referenced when calling (case-sensitive)
+#value = "xfce4-terminal" # The command to load the application if it isn't started
 disable_current_tag_swap = true
 focus_behaviour = "Sloppy"
+#focus_behaviour = "Driven"
 #focus_behaviour = "ClickTo"
 focus_new_windows = true
 
-[[scratchpad]]
-name = "MainTerminal" # This is the name which is referenced when calling (case-sensitive)
-#value = "xfce4-terminal" # The command to load the application if it isn't started
-value = "alacritty" # The command to load the application if it isn't started
+[[keybind]]
+command = "Execute"
+value = "xfce4-terminal --drop-down"
+modifier = []
+key = "F12"
+
+#[[keybind]]
+#command = "ToggleScratchPad"
+#value = "MainTerminal"
+#modifier = []
+#key = "F12"
+
 [[keybind]]
 command = "Execute"
 value = "killall conky"
@@ -26,8 +38,8 @@ modifier = ["modkey"]
 key = "c"
 
 [[keybind]]
-command = "ToggleScratchPad"
-value = "MainTerminal"
+command = "Execute"
+value = "xfce4-terminal --drop-down"
 modifier = []
 key = "F12"
 
@@ -175,13 +187,25 @@ modifier = ["modkey"]
 key = "Up"
 
 [[keybind]]
-command = "FocusPreviousTag"
+command = "Execute"
+value = "leftwm-command SwapScreens"
 modifier = ["modkey"]
 key = "Left"
 
 [[keybind]]
-command = "FocusNextTag"
+command = "Execute"
+value = "leftwm-command SwapScreens"
 modifier = ["modkey"]
+key = "Right"
+
+[[keybind]]
+command = "MoveWindowToNextWorkspace"
+modifier = ["modkey","Shift"]
+key = "Left"
+
+[[keybind]]
+command = "MoveWindowToNextWorkspace"
+modifier = ["modkey","Shift"]
 key = "Right"
 
 [[keybind]]
