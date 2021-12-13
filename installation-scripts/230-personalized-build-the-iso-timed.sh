@@ -45,10 +45,10 @@ echo
 	desktop="leftwm"
 	dmDesktop="leftwm"
 
-	arcolinuxVersion='v22.01.06'
+	arcolinuxVersion='v22.01.07'
 
 	TwistVersion=$(date +%y).$(date +%m).$(date +%d)
-	isoLabel='twist-'$desktop'-v'$TwistVersion'-x86_64.iso'
+	isoLabel='twist-'$desktop'-'$TwistVersion'-x86_64.iso'
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 59-1"
@@ -241,8 +241,8 @@ echo
 	oldname1='iso_name="arcolinuxl'
 	newname1='iso_name="twist-'$desktop
 
-	oldname2='iso_label="arcolinuxl'
-	newname2='iso_label="twist-'$desktop
+	oldname2='iso_label="arcolinuxl-'$arcolinuxVersion
+	newname2='iso_label="twist-'$desktop'-v'$TwistVersion
 
 	oldname2b='iso_version="'$arcolinuxVersion
 	newname2b='iso_version="v'$TwistVersion
@@ -309,8 +309,6 @@ echo
 	[ -d $outFolder ] || mkdir $outFolder
 	cd $buildFolder/archiso/
 	sudo mkarchiso -v -w $buildFolder -o $outFolder $buildFolder/archiso/
-
-
 
 echo
 echo "###################################################################"
