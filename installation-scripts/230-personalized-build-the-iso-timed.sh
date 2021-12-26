@@ -45,7 +45,7 @@ echo
 	desktop="leftwm"
 	dmDesktop="leftwm"
 
-	arcolinuxVersion='v22.01.07'
+	arcolinuxVersion='v22.01.10'
 
 	TwistVersion=$(date +%y).$(date +%m).$(date +%d)
 	isoLabel='twist-'$desktop'-v'$TwistVersion'-x86_64.iso'

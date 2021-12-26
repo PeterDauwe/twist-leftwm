@@ -29,7 +29,7 @@ echo
 	desktop="leftwm"
 	dmDesktop="leftwm"
 
-	arcolinuxVersion='v22.01.07'
+	arcolinuxVersion='v22.01.10'
 
 	isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
 

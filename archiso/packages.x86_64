@@ -456,7 +456,7 @@ ttf-font-awesome
 #numix-circle-icon-theme-git
 #paper-icon-theme
 sardi-icons
-#surfn-icons-git
+surfn-icons-git
 #surfn-arc-breeze-icons-git
 #zafiro-icon-theme
 
@@ -924,7 +924,9 @@ xfce4-taskmanager
 polybar
 
 #desktop specific leftwm
-leftwm
+#leftwm
+#leftwm-git
+leftwm-dev-git
 leftwm-theme-git
 sxhkd
 autorandr
