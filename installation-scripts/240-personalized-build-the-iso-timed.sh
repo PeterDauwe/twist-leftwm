@@ -45,13 +45,13 @@ echo
 	desktop="leftwm"
 	dmDesktop="leftwm"
 
-	arcolinuxVersion='v22.01.10'
+	arcolinuxVersion='v22.01.07'
 
 	TwistVersion=$(date +%y).$(date +%m).$(date +%d)
 	isoLabel='twist-'$desktop'-v'$TwistVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 59-1"
+	archisoRequiredVersion="archiso 60-1"
 	buildFolder=$HOME"/twist-build"
 	outFolder=$HOME"/Twist-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
