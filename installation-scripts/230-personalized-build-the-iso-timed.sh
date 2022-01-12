@@ -45,9 +45,9 @@ echo
 	desktop="leftwm"
 	dmDesktop="leftwm"
 
-	arcolinuxVersion='v22.01.10'
+	arcolinuxVersion='v22.03.01'
 
-	TwistVersion=$(date +%y).$(date +%m).$(date +%d)
+	TwistVersion=$(date +%y.%m.%d)
 	isoLabel='twist-'$desktop'-v'$TwistVersion'-x86_64.iso'
 
 	# setting of the general parameters
@@ -309,6 +309,8 @@ echo
 	[ -d $outFolder ] || mkdir $outFolder
 	cd $buildFolder/archiso/
 	sudo mkarchiso -v -w $buildFolder -o $outFolder $buildFolder/archiso/
+
+
 
 echo
 echo "###################################################################"
