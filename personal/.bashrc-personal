@@ -23,10 +23,19 @@ gitpush() {
 alias gp=gitpush
 
 
+mytheme() {
+    ltupd
+    lti db-scifi
+    lta db-scifi
+}
+alias myt=mytheme
+
+
 #No messages in virtualbox
 alias vbmessage='VBoxManage setextradata global GUI/SuppressMessages "all"'
 
 alias scr='scrot -d 3 -c ~/Pictures/Scrot-$(date +%Y.%m.%d-%H.%M.%S).jpg'
+
 
 #########################################################################################
 ##### This will copy all your personal settings into place ##############################
