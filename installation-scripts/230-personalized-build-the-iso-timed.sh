@@ -172,13 +172,18 @@ echo
 		echo
 		rm ../work/archiso/airootfs/personal/.gitkeep
     fi
-
+  
 ############################################################################
 #########################Add personalized folder############################
 ############################################################################
 	echo "Adding the content of the personal-twist folder"
 	echo
-	cp -rf ../personal-twist/ ../work/archiso/airootfs/
+	  cp -rf ../personal-twist/ ../work/archiso/airootfs/
+    if test -f ../work/archiso/airootfs/personal-twist/.gitkeep ; then
+		echo ".gitkeep is now removed"
+		echo
+		rm ../work/archiso/airootfs/personal-twist/.gitkeep
+    fi
 ############################################################################
 
 	echo "Copying the Archiso folder to build work"
