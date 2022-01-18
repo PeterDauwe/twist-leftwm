@@ -12,7 +12,12 @@ alias gc="git clone"
 
 alias gitpull="find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | xargs -I {} git -C {} pull"
 
-gitpush() {
+#No messages in virtualbox
+alias vbmessage='VBoxManage setextradata global GUI/SuppressMessages "all"'
+
+alias scr='scrot -d 3 -c ~/Pictures/Scrot-$(date +%Y.%m.%d-%H.%M.%S).jpg'
+
+gp() {
     git pull
     git add -u
     git add --all .
@@ -20,27 +25,17 @@ gitpush() {
     git commit -m "$input"
     git push --force -u origin master
 }
-alias gp=gitpush
 
-
-mytheme() {
+myt() {
     ltupd
     lti db-scifi
     lta db-scifi
 }
-alias myt=mytheme
-
-
-#No messages in virtualbox
-alias vbmessage='VBoxManage setextradata global GUI/SuppressMessages "all"'
-
-alias scr='scrot -d 3 -c ~/Pictures/Scrot-$(date +%Y.%m.%d-%H.%M.%S).jpg'
-
 
 #########################################################################################
 ##### This will copy all your personal settings into place ##############################
 #########################################################################################
-customsettings() {
+custom() {
     sudo chmod -R 755 /personal-twist/personal-home/*
     cp -Rf /personal-twist/personal-home/* ~
     sudo chmod -R 755 /personal-twist/personal-root/*
@@ -58,7 +53,6 @@ customsettings() {
     lta db-scifi    
     
 }
-alias custom=customsettings
 #########################################################################################
 #########################################################################################
 
