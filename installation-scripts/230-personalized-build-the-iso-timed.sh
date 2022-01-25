@@ -45,10 +45,10 @@ echo
 	desktop="leftwm"
 	dmDesktop="leftwm"
 
-	arcolinuxVersion='v22.03.02'
+	arcolinuxVersion='v22.03.03'
 
-	TwistVersion=$(date +%y).$(date +%m).$(date +%d)
-	isoLabel='twist-'$desktop'-v'$TwistVersion'-x86_64.iso'
+	TwistVersion='v'$(date +%y).$(date +%m).$(date +%d)
+	isoLabel='twist-'$desktop'-'$TwistVersion'-x86_64.iso'
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 60-1"
@@ -247,16 +247,16 @@ echo
 	newname1='iso_name="twist-'$desktop
 
 	oldname2='iso_label="arcolinuxl'
-	newname2='iso_label="twist-'$desktop'
+	newname2='iso_label="twist-'$desktop
 
 	oldname2b='iso_version="'$arcolinuxVersion
-	newname2b='iso_version="v'$TwistVersion'
+	newname2b='iso_version="'$TwistVersion
 
 	oldname3='ArcoLinuxL'
 	newname3='Twist-'$desktop
 
 	oldname3b='ISO_RELEASE='$arcolinuxVersion
-	newname3b='ISO_RELEASE=v'$TwistVersion
+	newname3b='ISO_RELEASE='$TwistVersion
 
 	#hostname
 	oldname4='ArcoLinuxL'
