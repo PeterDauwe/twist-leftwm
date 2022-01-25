@@ -246,11 +246,11 @@ echo
 	oldname1='iso_name="arcolinuxl'
 	newname1='iso_name="twist-'$desktop
 
-	oldname2='iso_label="arcolinuxl'
-	newname2='iso_label="twist-'$desktop'
+	oldname2='iso_label="arcolinuxl-'$arcolinuxVersion
+	newname2='iso_label="twist-'$desktop'-v'$TwistVersion
 
 	oldname2b='iso_version="'$arcolinuxVersion
-	newname2b='iso_version="v'$TwistVersion'
+	newname2b='iso_version="'$TwistVersion
 
 	oldname3='ArcoLinuxL'
 	newname3='Twist-'$desktop
@@ -290,17 +290,17 @@ echo
 	sudo sed -i "s/\(^ISO_BUILD=\).*/\1$date_build/" $buildFolder/archiso/airootfs/etc/dev-rel
 
 
-echo
-echo "###########################################################"
-tput setaf 2
-echo "Phase 6 :"
-echo "- Cleaning the cache from /var/cache/pacman/pkg/"
-tput sgr0
-echo "###########################################################"
-echo
+#echo
+#echo "################################################################## "
+#tput setaf 2
+#echo "Phase 6 :"
+#echo "- Cleaning the cache from /var/cache/pacman/pkg/"
+#tput sgr0
+#echo "################################################################## "
+#echo
 
-	echo "Cleaning the cache from /var/cache/pacman/pkg/"
-	yes | sudo pacman -Scc
+	#echo "Cleaning the cache from /var/cache/pacman/pkg/"
+	#yes | sudo pacman -Scc
 
 echo
 echo "################################################################## "
@@ -360,17 +360,18 @@ else
     echo "Completed in $SECONDS seconds"
 fi
 	sn1
-echo
-echo "##################################################################"
-tput setaf 2
-echo "Phase 9 :"
-echo "- Making sure we start with a clean slate next time"
-tput sgr0
-echo "################################################################## "
-echo
 
-	echo "Deleting the build folder if one exists - takes some time"
-	[ -d $buildFolder ] && sudo rm -rf $buildFolder
+#echo
+#echo "##################################################################"
+#tput setaf 2
+#echo "Phase 9 :"
+#echo "- Making sure we start with a clean slate next time"
+#tput sgr0
+#echo "################################################################## "
+#echo
+
+	#echo "Deleting the build folder if one exists - takes some time"
+	#[ -d $buildFolder ] && sudo rm -rf $buildFolder
 
 echo
 echo "##################################################################"

@@ -172,13 +172,18 @@ echo
 		echo
 		rm ../work/archiso/airootfs/personal/.gitkeep
     fi
-
+  
 ############################################################################
 #########################Add personalized folder############################
 ############################################################################
 	echo "Adding the content of the personal-twist folder"
 	echo
-	cp -rf ../personal-twist/ ../work/archiso/airootfs/
+	  cp -rf ../personal-twist/ ../work/archiso/airootfs/
+    if test -f ../work/archiso/airootfs/personal-twist/.gitkeep ; then
+		echo ".gitkeep is now removed"
+		echo
+		rm ../work/archiso/airootfs/personal-twist/.gitkeep
+    fi
 ############################################################################
 
 	echo "Copying the Archiso folder to build work"
@@ -241,11 +246,11 @@ echo
 	oldname1='iso_name="arcolinuxl'
 	newname1='iso_name="twist-'$desktop
 
-	oldname2='iso_label="arcolinuxl-'$arcolinuxVersion
-	newname2='iso_label="twist-'$desktop'-v'$TwistVersion
+	oldname2='iso_label="arcolinuxl'
+	newname2='iso_label="twist-'$desktop'
 
 	oldname2b='iso_version="'$arcolinuxVersion
-	newname2b='iso_version="v'$TwistVersion
+	newname2b='iso_version="v'$TwistVersion'
 
 	oldname3='ArcoLinuxL'
 	newname3='Twist-'$desktop
