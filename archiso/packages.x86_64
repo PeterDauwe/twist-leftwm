@@ -300,8 +300,8 @@ numlockx
 #qbittorrent
 scrot
 #simplescreenrecorder
-#termite
-#variety
+termite
+variety
 #vlc
 
 ###conky
