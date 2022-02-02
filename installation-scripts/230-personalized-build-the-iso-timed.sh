@@ -51,7 +51,7 @@ echo
 	isoLabel='twist-'$desktop'-'$TwistVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 60-1"
+	archisoRequiredVersion="archiso 61-1"
 	buildFolder=$HOME"/twist-build"
 	outFolder=$HOME"/Twist-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
