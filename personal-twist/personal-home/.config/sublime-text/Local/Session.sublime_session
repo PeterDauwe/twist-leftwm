@@ -1,0 +1,1053 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 4126,
+	"last_window_id": 8,
+	"log_indexing": false,
+	"next_update_check": 1643955464,
+	"settings":
+	{
+		"new_window_full_screen": false,
+		"new_window_height": 1012.0,
+		"new_window_maximized": false,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/peter/.config/fish/config.fish",
+				"/home/peter/.config/fish/aliases.fish",
+				"/home/peter/BUILDFOLDER/scripts/scripts/dmenu/layouts.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/ytsubs.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/load-layout.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/web",
+				"/home/peter/BUILDFOLDER/scripts/scripts/testmenu.sh",
+				"/home/peter/.config/polybar/config.ini",
+				"/home/peter/.config/alacritty.yml",
+				"/home/peter/.config/polybar/config",
+				"/home/peter/baraction.sh",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/polybarbottom.config",
+				"/home/peter/BUILDFOLDER/scripts/hotkeys_leftwm.sh",
+				"/home/peter/.config/leftwm/themes/db-comic/scripts/wal.sh",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/modules.ini",
+				"/home/peter/BUILDFOLDER/scripts/scripts/windows.sh",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/ewmh-name",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/mails",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/top-bar",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/launch.sh",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/config",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/polybar_scripts/test_echo.sh",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/polybar_scripts/updates_arch_aur.sh",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/polybar_scripts/openweathermap-fullfeatured.sh",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/autorandr/default/config",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/dunst/dunstrc",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/i3/config",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/neofetch/config.conf",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/prospector/my_own_profile.yaml",
+				"/home/peter/BUILDFOLDER/dotfiles/.zshrc",
+				"/home/peter/BUILDFOLDER/dotfiles/README.md",
+				"/home/peter/.bashrc",
+				"/home/peter/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+				"/home/peter/BUILDFOLDER/LEFTWM/twist-leftwm/installation-scripts/30-build-the-iso-the-first-time.sh",
+				"/home/peter/BUILDFOLDER/LEFTWM/twist-leftwm/installation-scripts/230-personalized-build-the-iso-timed.sh",
+				"/home/peter/BUILDFOLDER/LEFTWM/arco-leftwm/installation-scripts/30-build-the-iso-the-first-time.sh",
+				"/home/peter/.xsessionrc",
+				"/home/peter/.xsession",
+				"/home/peter/.conkyrc",
+				"/home/peter/.dmrc",
+				"/home/peter/.zshrc",
+				"/home/peter/.config/sublime-text/Local/Session.sublime_session",
+				"/home/peter/.bashrc-personal",
+				"/etc/skel/.config/fish/666-remove-fish-and-all-folders-completely.sh",
+				"/etc/skel/.config/fish/config.fish",
+				"/home/peter/.config/fish/private.fish",
+				"/home/peter/.Xresources",
+				"/home/peter/.gtkrc-2.0",
+				"/home/peter/Desktop/NEW TOKEN OKT",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/launcher2.rasi",
+				"/home/peter/BUILDFOLDER/scripts/scripts/addvm.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/bar.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/schedule.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/new-layout.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/hotkeys.sh",
+				"/home/peter/.config/fish/fish_variables",
+				"/home/peter/BUILDFOLDER/LEFTWM/twist-leftwm/personal-twist/personal-home/.config/fish/aliases.fish",
+				"/home/peter/.config/leftwm/themes/db-comic/scripts/sxiview.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/wall",
+				"/home/peter/.config/fish (copy 1)/config.fish",
+				"/home/peter/.config/fish (copy 1)/fish_variables",
+				"/home/peter/.config/fish (copy 1)/aliases.fish",
+				"/home/peter/.config/fish (copy 1)/private.fish",
+				"/home/peter/.config/fish/1-install-oh-my-fish.sh",
+				"/home/peter/.config/fish (copy 1)/.bashrc",
+				"/home/peter/.config/fish (copy 1)/config (copy 1).fish",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/polybartop.config",
+				"/home/peter/BUILDFOLDER/LEFTWM/2-pull-all-arcolinuxb-gits-v1.sh",
+				"/home/peter/.config/leftwm/sxhkd/sxhkdrc",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/colors.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/leftwm-pol/config.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/modules/system_modules.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/modules/user_modules.ini",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/colors.ini",
+				"/home/peter/.config/polybar/leftwm-pol/config.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/picom/picom.conf",
+				"/home/peter/.config/leftwm/themes/db-scifi/polybar/polybartop.config",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/fonts.ini",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/user_modules.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/include-modules.ini",
+				"/home/peter/.config/leftwm/themes/forest/polybar/modules.ini",
+				"/home/peter/.config/leftwm/themes/forest/polybar/user_modules.ini",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/user_modules (copy 1).ini",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/bars.ini",
+				"/home/peter/.config/leftwm/themes/forest/up",
+				"/home/peter/.config/leftwm/themes/forest/polybar/config.ini",
+				"/home/peter/.config/leftwm/themes/forest/polybar/colors.ini",
+				"/home/peter/.config/leftwm/themes/forest/polybar/bars.ini",
+				"/home/peter/.config/leftwm/themes/db-scifi/polybar/modules.ini",
+				"/home/peter/.config/polybar/modules/system_modules.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/fonts.ini",
+				"/home/peter/.config/leftwm/themes/db-scifi/polybar/fonts.ini",
+				"/home/peter/.config/leftwm/themes/db-scifi/polybar/colors.ini",
+				"/home/peter/.config/polybar (copy 1)/config",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/small_top_launcher.rasi",
+				"/home/peter/BUILDFOLDER/arco-berry/archiso/packages.x86_64",
+				"/home/peter/EXTRA STUFF/YouTube-DL/MJ/ytd-mj.sh",
+				"/home/peter/BUILDFOLDER/LEFTWM/leftwm/README.md",
+				"/home/peter/.config/polybar/modules/user_modules.ini",
+				"/home/peter/.config/leftwm/themes/db-comic/template.liquid",
+				"/home/peter/Downloads/dotfilesi3/HomeDir/.config/polybar/scripts/readme.sh",
+				"/home/peter/.config/polybar/launch.sh",
+				"/home/peter/BUILDFOLDER/wtftw/xlib/Cargo.toml",
+				"/home/peter/BUILDFOLDER/wtftw/core/Cargo.toml",
+				"/home/peter/BUILDFOLDER/wtftw/Makefile",
+				"/home/peter/BUILDFOLDER/wtftw/Cargo.toml",
+				"/home/peter/BUILDFOLDER/wtftw/README.md",
+				"/home/peter/BUILDFOLDER/wtftw/Cargo.lock",
+				"/home/peter/EXTRA STUFF/YouTube-DL/ytd-mj.sh",
+				"/home/peter/.config/polybar$/launch.sh",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/launcher.sh",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/colors.rasi",
+				"/home/peter/BUILDFOLDER/dotfiles-2.0/config/eww-1920/scripts/getquotes",
+				"/home/peter/BUILDFOLDER/dotfiles-2.0/config/eww-1920/scripts/logout.sh",
+				"/home/peter/BUILDFOLDER/dotfiles-2.0/config/eww-1920/scripts/lockscreen.sh",
+				"/home/peter/BUILDFOLDER/dotfiles-2.0/config/rofi/launcher/black_launcher.rasi",
+				"/home/peter/.config/leftwm/themes/db-comic/scripts/change.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/launchers/slate/launcher.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/launchers/text/launcher.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/applets/menu/backlight.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/applets/menu/style.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/applets/menu/apps.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/launchers/text/styles/colors.rasi",
+				"/home/peter/BUILDFOLDER/rofi/1080p/powermenu/powermenu.sh",
+				"/home/peter/.config/leftwm/themes/current/polybar/scripts/rofi/launcher2.rasi",
+				"/home/peter/.config/leftwm/themes/db-comic/README.md",
+				"/home/peter/BUILDFOLDER/rofi/1080p/launchers/misc/launcher.sh",
+				"/home/peter/.fehbg"
+			],
+			"find":
+			{
+				"height": 27.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"font",
+					"if",
+					"ewmh",
+					"ewm",
+					"line",
+					"ewmh",
+					"tray",
+					"launcher",
+					"workspa",
+					"launcher",
+					"workspaces",
+					"sep",
+					"ewmh",
+					"workspaces",
+					"berry",
+					"ewmh",
+					"rofi",
+					"kernel",
+					"rofi",
+					"activity"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 27.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 50.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 948.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/small_top_launcher.rasi",
+					"settings":
+					{
+						"buffer_size": 3241,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/launcher2.rasi",
+					"settings":
+					{
+						"buffer_size": 3290,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							3,
+							1,
+							"paste",
+							null,
+							"AQAAANwBAAAAAAAASQIAAAAAAAAAAAAA",
+							"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAANwBAAAAAAAA3AEAAAAAAAAAAAAAAADwvw"
+						],
+						[
+							4,
+							1,
+							"insert",
+							{
+								"characters": "\n"
+							},
+							"AQAAAEkCAAAAAAAASgIAAAAAAAAAAAAA",
+							"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAEkCAAAAAAAASQIAAAAAAAAAAAAAAADwvw"
+						]
+					]
+				},
+				{
+					"file": "/home/peter/Desktop/NEW TOKEN OKT",
+					"settings":
+					{
+						"buffer_size": 40,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/peter/.config/leftwm/themes/db-scifi/polybar/scripts/rofi/small_launcher.rasi",
+					"settings":
+					{
+						"buffer_size": 3151,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/peter/.config/leftwm/themes/db-scifi/polybar/scripts/rofi/launcher2.rasi",
+					"settings":
+					{
+						"buffer_size": 3205,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							3,
+							1,
+							"insert",
+							{
+								"characters": "\n"
+							},
+							"AQAAANsBAAAAAAAA3AEAAAAAAAAAAAAA",
+							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA2wEAAAAAAADbAQAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							4,
+							1,
+							"paste",
+							null,
+							"AQAAANwBAAAAAAAASQIAAAAAAAAAAAAA",
+							"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA3AEAAAAAAADcAQAAAAAAAAAAAAAAAPC/"
+						]
+					]
+				},
+				{
+					"file": "/home/peter/BUILDFOLDER/LEFTWM/twist-leftwm/personal/.bashrc-personal",
+					"settings":
+					{
+						"buffer_size": 1903,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					},
+					"undo_stack":
+					[
+						[
+							3,
+							1,
+							"insert",
+							{
+								"characters": "\nsh"
+							},
+							"BAAAAIUFAAAAAAAAhgUAAAAAAAAAAAAAhgUAAAAAAACJBQAAAAAAAAAAAACJBQAAAAAAAIoFAAAAAAAAAAAAAIoFAAAAAAAAiwUAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIUFAAAAAAAAhQUAAAAAAAAAAAAAAADwvw"
+						],
+						[
+							4,
+							1,
+							"insert",
+							{
+								"characters": " ~"
+							},
+							"AgAAAIsFAAAAAAAAjAUAAAAAAAAAAAAAjAUAAAAAAACNBQAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIsFAAAAAAAAiwUAAAAAAAAAAAAAAADwvw"
+						],
+						[
+							5,
+							1,
+							"insert",
+							{
+								"characters": "/"
+							},
+							"AQAAAI0FAAAAAAAAjgUAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAI0FAAAAAAAAjQUAAAAAAAAAAAAAAADwvw"
+						],
+						[
+							6,
+							1,
+							"paste",
+							null,
+							"AQAAAI4FAAAAAAAAsQUAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAI4FAAAAAAAAjgUAAAAAAAAAAAAAAADwvw"
+						],
+						[
+							10,
+							12,
+							"right_delete",
+							null,
+							"DAAAAI4FAAAAAAAAjgUAAAAAAAABAAAAL44FAAAAAAAAjgUAAAAAAAABAAAAaI4FAAAAAAAAjgUAAAAAAAABAAAAb44FAAAAAAAAjgUAAAAAAAABAAAAbY4FAAAAAAAAjgUAAAAAAAABAAAAZY4FAAAAAAAAjgUAAAAAAAABAAAAL44FAAAAAAAAjgUAAAAAAAABAAAAcI4FAAAAAAAAjgUAAAAAAAABAAAAZY4FAAAAAAAAjgUAAAAAAAABAAAAdI4FAAAAAAAAjgUAAAAAAAABAAAAZY4FAAAAAAAAjgUAAAAAAAABAAAAco4FAAAAAAAAjgUAAAAAAAABAAAALw",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAI4FAAAAAAAAjgUAAAAAAAAAAAAAAADwvw"
+						],
+						[
+							12,
+							1,
+							"insert",
+							{
+								"characters": "toazert"
+							},
+							"BwAAAKUFAAAAAAAApgUAAAAAAAAAAAAApgUAAAAAAACnBQAAAAAAAAAAAACnBQAAAAAAAKgFAAAAAAAAAAAAAKgFAAAAAAAAqQUAAAAAAAAAAAAAqQUAAAAAAACqBQAAAAAAAAAAAACqBQAAAAAAAKsFAAAAAAAAAAAAAKsFAAAAAAAArAUAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKUFAAAAAAAApQUAAAAAAAD////////vfw"
+						],
+						[
+							13,
+							1,
+							"insert",
+							{
+								"characters": "y"
+							},
+							"AQAAAKwFAAAAAAAArQUAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKwFAAAAAAAArAUAAAAAAAAAAAAAAADwvw"
+						],
+						[
+							14,
+							1,
+							"insert",
+							{
+								"characters": ".sh"
+							},
+							"AwAAAK0FAAAAAAAArgUAAAAAAAAAAAAArgUAAAAAAACvBQAAAAAAAAAAAACvBQAAAAAAALAFAAAAAAAAAAAAAA",
+							"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAK0FAAAAAAAArQUAAAAAAAAAAAAAAADwvw"
+						]
+					]
+				},
+				{
+					"file": "/home/peter/.config/sublime-text/Local/Session.sublime_session",
+					"settings":
+					{
+						"buffer_size": 31387,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/peter/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 53,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/peter/.config/fish/config.fish",
+				"/home/peter/.config/fish/aliases.fish",
+				"/home/peter/BUILDFOLDER/scripts/scripts/dmenu/layouts.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/ytsubs.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/load-layout.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/web",
+				"/home/peter/BUILDFOLDER/scripts/scripts/testmenu.sh",
+				"/home/peter/.config/polybar/config.ini",
+				"/home/peter/.config/alacritty.yml",
+				"/home/peter/.config/polybar/config",
+				"/home/peter/baraction.sh",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/polybarbottom.config",
+				"/home/peter/BUILDFOLDER/scripts/hotkeys_leftwm.sh",
+				"/home/peter/.config/leftwm/themes/db-comic/scripts/wal.sh",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/modules.ini",
+				"/home/peter/BUILDFOLDER/scripts/scripts/windows.sh",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/ewmh-name",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/mails",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/top-bar",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/launch.sh",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/config",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/polybar_scripts/test_echo.sh",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/polybar_scripts/updates_arch_aur.sh",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/polybar/polybar_scripts/openweathermap-fullfeatured.sh",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/autorandr/default/config",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/dunst/dunstrc",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/i3/config",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/neofetch/config.conf",
+				"/home/peter/BUILDFOLDER/dotfiles/.config/prospector/my_own_profile.yaml",
+				"/home/peter/BUILDFOLDER/dotfiles/.zshrc",
+				"/home/peter/BUILDFOLDER/dotfiles/README.md",
+				"/home/peter/.bashrc",
+				"/home/peter/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+				"/home/peter/BUILDFOLDER/LEFTWM/twist-leftwm/installation-scripts/30-build-the-iso-the-first-time.sh",
+				"/home/peter/BUILDFOLDER/LEFTWM/twist-leftwm/installation-scripts/230-personalized-build-the-iso-timed.sh",
+				"/home/peter/BUILDFOLDER/LEFTWM/arco-leftwm/installation-scripts/30-build-the-iso-the-first-time.sh",
+				"/home/peter/.xsessionrc",
+				"/home/peter/.xsession",
+				"/home/peter/.conkyrc",
+				"/home/peter/.dmrc",
+				"/home/peter/.zshrc",
+				"/home/peter/.config/sublime-text/Local/Session.sublime_session",
+				"/home/peter/.bashrc-personal",
+				"/etc/skel/.config/fish/666-remove-fish-and-all-folders-completely.sh",
+				"/etc/skel/.config/fish/config.fish",
+				"/home/peter/.config/fish/private.fish",
+				"/home/peter/.Xresources",
+				"/home/peter/.gtkrc-2.0",
+				"/home/peter/Desktop/NEW TOKEN OKT",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/launcher2.rasi",
+				"/home/peter/BUILDFOLDER/scripts/scripts/addvm.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/bar.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/schedule.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/new-layout.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/hotkeys.sh",
+				"/home/peter/.config/fish/fish_variables",
+				"/home/peter/BUILDFOLDER/LEFTWM/twist-leftwm/personal-twist/personal-home/.config/fish/aliases.fish",
+				"/home/peter/.config/leftwm/themes/db-comic/scripts/sxiview.sh",
+				"/home/peter/BUILDFOLDER/scripts/scripts/wall",
+				"/home/peter/.config/fish (copy 1)/config.fish",
+				"/home/peter/.config/fish (copy 1)/fish_variables",
+				"/home/peter/.config/fish (copy 1)/aliases.fish",
+				"/home/peter/.config/fish (copy 1)/private.fish",
+				"/home/peter/.config/fish/1-install-oh-my-fish.sh",
+				"/home/peter/.config/fish (copy 1)/.bashrc",
+				"/home/peter/.config/fish (copy 1)/config (copy 1).fish",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/polybartop.config",
+				"/home/peter/BUILDFOLDER/LEFTWM/2-pull-all-arcolinuxb-gits-v1.sh",
+				"/home/peter/.config/leftwm/sxhkd/sxhkdrc",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/colors.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/leftwm-pol/config.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/modules/system_modules.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/modules/user_modules.ini",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/colors.ini",
+				"/home/peter/.config/polybar/leftwm-pol/config.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/picom/picom.conf",
+				"/home/peter/.config/leftwm/themes/db-scifi/polybar/polybartop.config",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/fonts.ini",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/user_modules.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/include-modules.ini",
+				"/home/peter/.config/leftwm/themes/forest/polybar/modules.ini",
+				"/home/peter/.config/leftwm/themes/forest/polybar/user_modules.ini",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/user_modules (copy 1).ini",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/bars.ini",
+				"/home/peter/.config/leftwm/themes/forest/up",
+				"/home/peter/.config/leftwm/themes/forest/polybar/config.ini",
+				"/home/peter/.config/leftwm/themes/forest/polybar/colors.ini",
+				"/home/peter/.config/leftwm/themes/forest/polybar/bars.ini",
+				"/home/peter/.config/leftwm/themes/db-scifi/polybar/modules.ini",
+				"/home/peter/.config/polybar/modules/system_modules.ini",
+				"/run/media/peter/RED/2022 PEUX OS/.config/polybar/fonts.ini",
+				"/home/peter/.config/leftwm/themes/db-scifi/polybar/fonts.ini",
+				"/home/peter/.config/leftwm/themes/db-scifi/polybar/colors.ini",
+				"/home/peter/.config/polybar (copy 1)/config",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/small_top_launcher.rasi",
+				"/home/peter/BUILDFOLDER/arco-berry/archiso/packages.x86_64",
+				"/home/peter/EXTRA STUFF/YouTube-DL/MJ/ytd-mj.sh",
+				"/home/peter/BUILDFOLDER/LEFTWM/leftwm/README.md",
+				"/home/peter/.config/polybar/modules/user_modules.ini",
+				"/home/peter/.config/leftwm/themes/db-comic/template.liquid",
+				"/home/peter/Downloads/dotfilesi3/HomeDir/.config/polybar/scripts/readme.sh",
+				"/home/peter/.config/polybar/launch.sh",
+				"/home/peter/BUILDFOLDER/wtftw/xlib/Cargo.toml",
+				"/home/peter/BUILDFOLDER/wtftw/core/Cargo.toml",
+				"/home/peter/BUILDFOLDER/wtftw/Makefile",
+				"/home/peter/BUILDFOLDER/wtftw/Cargo.toml",
+				"/home/peter/BUILDFOLDER/wtftw/README.md",
+				"/home/peter/BUILDFOLDER/wtftw/Cargo.lock",
+				"/home/peter/EXTRA STUFF/YouTube-DL/ytd-mj.sh",
+				"/home/peter/.config/polybar$/launch.sh",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/launcher.sh",
+				"/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/colors.rasi",
+				"/home/peter/BUILDFOLDER/dotfiles-2.0/config/eww-1920/scripts/getquotes",
+				"/home/peter/BUILDFOLDER/dotfiles-2.0/config/eww-1920/scripts/logout.sh",
+				"/home/peter/BUILDFOLDER/dotfiles-2.0/config/eww-1920/scripts/lockscreen.sh",
+				"/home/peter/BUILDFOLDER/dotfiles-2.0/config/rofi/launcher/black_launcher.rasi",
+				"/home/peter/.config/leftwm/themes/db-comic/scripts/change.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/launchers/slate/launcher.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/launchers/text/launcher.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/applets/menu/backlight.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/applets/menu/style.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/applets/menu/apps.sh",
+				"/home/peter/BUILDFOLDER/rofi/1080p/launchers/text/styles/colors.rasi",
+				"/home/peter/BUILDFOLDER/rofi/1080p/powermenu/powermenu.sh",
+				"/home/peter/.config/leftwm/themes/current/polybar/scripts/rofi/launcher2.rasi",
+				"/home/peter/.config/leftwm/themes/db-comic/README.md",
+				"/home/peter/BUILDFOLDER/rofi/1080p/launchers/misc/launcher.sh",
+				"/home/peter/.fehbg"
+			],
+			"find":
+			{
+				"height": 27.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"font",
+					"if",
+					"ewmh",
+					"ewm",
+					"line",
+					"ewmh",
+					"tray",
+					"launcher",
+					"workspa",
+					"launcher",
+					"workspaces",
+					"sep",
+					"ewmh",
+					"workspaces",
+					"berry",
+					"ewmh",
+					"rofi",
+					"kernel",
+					"rofi",
+					"activity"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/small_top_launcher.rasi",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3241,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										935,
+										857
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 270.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 7,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/peter/.config/leftwm/themes/db-comic/polybar/scripts/rofi/launcher2.rasi",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3290,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										586,
+										586
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 6,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/peter/Desktop/NEW TOKEN OKT",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 40,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										40
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 5,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/peter/.config/leftwm/themes/db-scifi/polybar/scripts/rofi/small_launcher.rasi",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3151,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										845,
+										767
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 4,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/home/peter/.config/leftwm/themes/db-scifi/polybar/scripts/rofi/launcher2.rasi",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3205,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										585,
+										585
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/home/peter/BUILDFOLDER/LEFTWM/twist-leftwm/personal/.bashrc-personal",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1903,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1456,
+										1456
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 324.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"file": "/home/peter/.config/sublime-text/Local/Session.sublime_session",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 31387,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"file": "/home/peter/.config/sublime-text/Packages/User/Preferences.sublime-settings",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 53,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/JSON/JSON.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 27.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,964,32,1912,1044,1920,1080,1",
+			"project": "",
+			"replace":
+			{
+				"height": 50.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
