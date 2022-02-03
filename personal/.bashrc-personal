@@ -45,6 +45,7 @@ custom() {
    sed -i -e 's/ufetch-arco | lolcat/sfetch/g' .zshrc
    # sed -i -e 's/="random"/="Lastbobo"/g' .zshrc
    # sudo chsh $USER -s /bin/zsh
+   sh ~/.config/leftwm/scripts/toazerty.sh
     sudo /usr/local/bin/arcolinux-vbox-share
     VBoxManage setextradata global GUI/SuppressMessages "all"
     echo 'All your personal configs , cursors , backgrounds... are in place. Now log out to activate them.'
