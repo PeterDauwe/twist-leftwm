@@ -56,3 +56,8 @@ custom() {
 #########################################################################################
 #########################################################################################
 
+
+alias yt1080="yt-dlp -f 'bv[height=1080][ext=mp4]+ba[ext=m4a]' -o '%(title)s.%(ext)s'"
+alias yt720="yt-dlp -f 'bv[height=720][ext=mp4]+ba[ext=m4a]' -o '%(title)s.%(ext)s'"
+alias yt480="yt-dlp -f 'bv[height=480][ext=mp4]+ba[ext=m4a]' -o '%(title)s.%(ext)s'"
+
