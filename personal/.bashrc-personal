@@ -2,8 +2,6 @@
 # ~/.bashrc
 #
 
-alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
-
 #more sensitive data
 [[ -f ~/.bashrc-private ]] && . ~/.bashrc-private
 
@@ -14,8 +12,6 @@ alias gitpull="find . -maxdepth 3 -name .git -type d | rev | cut -c 6- | rev | x
 
 #No messages in virtualbox
 alias vbmessage='VBoxManage setextradata global GUI/SuppressMessages "all"'
-
-alias scr='scrot -d 3 -c ~/Pictures/Scrot-$(date +%Y.%m.%d-%H.%M.%S).jpg'
 
 gp() {
     git pull
@@ -42,10 +38,9 @@ custom() {
     sudo cp -Rf /personal-twist/personal-root/* /
     sed -i -e 's/ufetch-arco | lolcat/sfetch/g' .bashrc
     sed -i -e 's/! Xft.dpi:   96/ Xft.dpi:   96/g' .Xresources
-   sed -i -e 's/ufetch-arco | lolcat/sfetch/g' .zshrc
-   # sed -i -e 's/="random"/="Lastbobo"/g' .zshrc
-   # sudo chsh $USER -s /bin/zsh
-   sh ~/.config/leftwm/scripts/toazerty.sh
+    sed -i -e 's/neofetch/sfetch/g' .zshrc
+    # sed -i -e 's/="random"/="Lastbobo"/g' .zshrc
+    # sudo chsh $USER -s /bin/zsh
     sudo /usr/local/bin/arcolinux-vbox-share
     VBoxManage setextradata global GUI/SuppressMessages "all"
     echo 'All your personal configs , cursors , backgrounds... are in place. Now log out to activate them.'
@@ -56,8 +51,7 @@ custom() {
 #########################################################################################
 #########################################################################################
 
-
-alias yt1080="yt-dlp -f 'bv[height=1080][ext=mp4]+ba[ext=m4a]' -o '%(title)s.%(ext)s'"
-alias yt720="yt-dlp -f 'bv[height=720][ext=mp4]+ba[ext=m4a]' -o '%(title)s.%(ext)s'"
-alias yt480="yt-dlp -f 'bv[height=480][ext=mp4]+ba[ext=m4a]' -o '%(title)s.%(ext)s'"
-
+ 
+alias 1080yt="yt-dlp -f 'bv[height=1080][ext=mp4]+ba[ext=m4a]' -o '%(upload_date)s - %(title)s.%(ext)s'"
+alias 720yt="yt-dlp -f 'bv[height=720][ext=mp4]+ba[ext=m4a]' -o '%(upload_date)s - %(title)s.%(ext)s'"
+alias 480yt="yt-dlp -f 'bv[height=480][ext=mp4]+ba[ext=m4a]' -o '%(upload_date)s - %(title)s.%(ext)s'"
