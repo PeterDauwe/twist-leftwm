@@ -1,16 +1,10 @@
 #!/bin/bash
 set -e
 ##################################################################################################################
-# Author 	: 	Erik Dubois
-# Website : https://www.erikdubois.be
-# Website	:	https://www.arcolinux.info
-# Website	:	https://www.arcolinux.com
-# Website	:	https://www.arcolinuxd.com
-# Website	:	https://www.arcolinuxforum.com
-##################################################################################################################
-#
-#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
-#
+# Author 	: 	Peter Dauwe
 ##################################################################################################################
 
-yt-dlp --no-playlist --download-archive edubois.txt -f best -ciw -o "%(upload_date)s - %(title)s.%(ext)s" -v https://www.youtube.com/ErikDubois
+DIR="https://www.youtube.com/ErikDubois"
+FILE="edubois.txt"
+
+yt-dlp --no-playlist --download-archive $FILE -f 'bv[height=720][ext=mp4]+ba[ext=m4a]' -ciw -o "%(upload_date)s - %(title)s.%(ext)s" -v $DIR
