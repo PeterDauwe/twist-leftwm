@@ -36,7 +36,7 @@ custom() {
     cp -Rf /personal-twist/personal-home/* ~
     sudo chmod -R 755 /personal-twist/personal-root/*
     sudo cp -Rf /personal-twist/personal-root/* /
-    sed -i -e 's/ufetch-arco | lolcat/sfetch/g' .bashrc
+    sed -i -e 's/neofetch/sfetch/g' .bashrc
     sed -i -e 's/! Xft.dpi:   96/ Xft.dpi:   96/g' .Xresources
     sed -i -e 's/neofetch/sfetch/g' .zshrc
     # sed -i -e 's/="random"/="Lastbobo"/g' .zshrc
