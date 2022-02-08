@@ -30,3 +30,13 @@ zathura
 zathura-cb
 zathura-djvu
 zathura-pdf-mupdf
+
+## Special for btrfs and snapper
+btrfs-assistant
+snap-pac
+snap-pac-grub
+snap-sync
+snapper
+snapper-gui-git
+snapper-rollback
+snapper-support
