@@ -14,6 +14,24 @@
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
+SECONDS=0
+
+sound() {
+  # plays sounds in sequence and waits for them to finish
+  for s in $@; do
+    paplay $s
+  done
+}
+sn1() {
+  sound /usr/share/sounds/freedesktop/stereo/complete.oga
+}
+sn2() {
+  sound /usr/share/sounds/freedesktop/stereo/suspend-error.oga
+}
+
+export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+
+
 echo
 echo "################################################################## "
 tput setaf 2
@@ -29,14 +47,15 @@ echo
 	desktop="leftwm"
 	dmDesktop="leftwm"
 
-	arcolinuxVersion='v22.03.05'
+	arcolinuxVersion='v22.03.04'
 
-	isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
+	TwistVersion='v'$(date +%y).$(date +%m).$(date +%d)
+	isoLabel='twist-'$desktop'-'$TwistVersion'-x86_64.iso'
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 61-1"
-	buildFolder=$HOME"/arcolinuxb-build"
-	outFolder=$HOME"/ArcoLinuxB-Out"
+	buildFolder=$SCRIPTPATH"/twist-build"
+	outFolder=$SCRIPTPATH"/Twist-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 
 	echo "################################################################## "
@@ -63,6 +82,8 @@ echo
 	echo "or update your system"
 	echo "###################################################################################################"
 	tput sgr0
+	sn2
+	exit 1
 	fi
 
 echo
@@ -153,6 +174,20 @@ echo
 		echo
 		rm ../work/archiso/airootfs/personal/.gitkeep
     fi
+  
+############################################################################
+#########################Add personalized folder############################
+############################################################################
+	echo "Adding the content of the personal-twist folder"
+	echo
+	  cp -rf ../personal-twist/ ../work/archiso/airootfs/
+    if test -f ../work/archiso/airootfs/personal-twist/.gitkeep ; then
+		echo ".gitkeep is now removed"
+		echo
+		rm ../work/archiso/airootfs/personal-twist/.gitkeep
+    fi
+############################################################################
+
 	echo "Copying the Archiso folder to build work"
 	echo
 	mkdir $buildFolder
@@ -185,6 +220,13 @@ echo
 	echo
 	echo "Copying the new packages.x86_64 file to the build folder"
 	cp -f ../archiso/packages.x86_64 $buildFolder/archiso/packages.x86_64
+
+############################################################################
+###########Add personalsoftware.x86_64 into packages.x86_64#################
+############################################################################
+    cat ../archiso/personalsoftware.x86_64 >> $buildFolder/archiso/packages.x86_64
+############################################################################
+
 	echo
 	echo "Changing group for polkit folder"
 	sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
@@ -204,17 +246,23 @@ echo
 
 	#profiledef.sh
 	oldname1='iso_name="arcolinuxl'
-	newname1='iso_name="arcolinuxb-'$desktop
+	newname1='iso_name="twist-'$desktop
 
 	oldname2='iso_label="arcolinuxl'
-	newname2='iso_label="arcolinuxb-'$desktop
+	newname2='iso_label="twist-'$desktop
+
+	oldname2b='iso_version="'$arcolinuxVersion
+	newname2b='iso_version="'$TwistVersion
 
 	oldname3='ArcoLinuxL'
-	newname3='ArcoLinuxB-'$desktop
+	newname3='Twist-'$desktop
+
+	oldname3b='ISO_RELEASE='$arcolinuxVersion
+	newname3b='ISO_RELEASE='$TwistVersion
 
 	#hostname
 	oldname4='ArcoLinuxL'
-	newname4='ArcoLinuxB-'$desktop
+	newname4='Twist-'$desktop
 
 	#sddm.conf user-session
 	oldname5='Session=xfce'
@@ -224,7 +272,9 @@ echo
 	echo
 	sed -i 's/'$oldname1'/'$newname1'/g' $buildFolder/archiso/profiledef.sh
 	sed -i 's/'$oldname2'/'$newname2'/g' $buildFolder/archiso/profiledef.sh
+	sed -i 's/'$oldname2b'/'$newname2b'/g' $buildFolder/archiso/profiledef.sh
 	sed -i 's/'$oldname3'/'$newname3'/g' $buildFolder/archiso/airootfs/etc/dev-rel
+	sed -i 's/'$oldname3b'/'$newname3b'/g' $buildFolder/archiso/airootfs/etc/dev-rel
 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/airootfs/etc/hostname
 	sed -i 's/'$oldname5'/'$newname5'/g' $buildFolder/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
 	#bios
@@ -297,7 +347,21 @@ echo
 	echo "Moving pkglist.x86_64.txt"
 	echo "########################"
 	cp $buildFolder/iso/arch/pkglist.x86_64.txt  $outFolder/$isoLabel".pkglist.txt"
-	
+
+
+if (( $SECONDS > 3600 )) ; then
+    let "hours=SECONDS/3600"
+    let "minutes=(SECONDS%3600)/60"
+    let "seconds=(SECONDS%3600)%60"
+    echo "Completed in $hours hour(s), $minutes minute(s) and $seconds second(s)" 
+elif (( $SECONDS > 60 )) ; then
+    let "minutes=(SECONDS%3600)/60"
+    let "seconds=(SECONDS%3600)%60"
+    echo "Completed in $minutes minute(s) and $seconds second(s)"
+else
+    echo "Completed in $SECONDS seconds"
+fi
+	sn1
 echo
 echo "##################################################################"
 tput setaf 2
