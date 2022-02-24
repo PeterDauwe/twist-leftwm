@@ -168,11 +168,11 @@ echo
 	echo "Adding our own repo to /etc/pacman.conf"
 	#nemesis-repo added to /etc/pacman.conf
 #echo '
-#[noobie_repo]
+#[noobie-repo]
 #SigLevel = Optional TrustedOnly
 #Server = https://peterdauwe.github.io/$repo/$arch' | sudo tee -a ../work/archiso/pacman.conf
 #echo '
-#[noobie_repo]
+#[noobie-repo]
 #SigLevel = Optional TrustedOnly
 #Server = https://peterdauwe.github.io/$repo/$arch' | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
 	echo
