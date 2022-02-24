@@ -55,6 +55,10 @@ echo
 	buildFolder=$HOME"/twist-build"
 	outFolder=$HOME"/Twist-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
+	
+	# if you want to use your personal repo and personal packages
+	# set to true (default:false)
+	personalrepo=true
 
 	echo "################################################################## "
 	echo "Building the desktop                   : "$desktop
@@ -153,7 +157,7 @@ tput setaf 2
 echo "Phase 3 :"
 echo "- Deleting the build folder if one exists"
 echo "- Git clone the latest ArcoLinux-iso from github"
-echo "- add our own repo + add the packages to packages.x86_64"
+echo "- add our own personal repo + add your packages to packages-personal-repo.x86_64"
 tput sgr0
 echo "################################################################## "
 echo
@@ -165,16 +169,21 @@ echo
 	echo
 	git clone https://github.com/arcolinux/arcolinuxl-iso ../work
 	echo
-	echo "Adding our own repo to /etc/pacman.conf"
-	#nemesis-repo added to /etc/pacman.conf
-#echo '
-#[noobie-repo]
-#SigLevel = Optional TrustedOnly
-#Server = https://peterdauwe.github.io/$repo/$arch' | sudo tee -a ../work/archiso/pacman.conf
-#echo '
-#[noobie-repo]
-#SigLevel = Optional TrustedOnly
-#Server = https://peterdauwe.github.io/$repo/$arch' | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
+
+	if [ $personalrepo == true ]; then
+		echo "Adding our own repo to /etc/pacman.conf"
+		echo "Change these lines to reflect your own repo"
+		echo "Copy/paste these lines to add more repos"
+echo '
+[noobie-repo]
+SigLevel = Optional TrustedOnly
+Server = https://peterdauwe.github.io/$repo/$arch' | sudo tee -a ../work/archiso/pacman.conf
+echo '
+[noobie-repo]
+SigLevel = Optional TrustedOnly
+Server = https://peterdauwe.github.io/$repo/$arch' | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
+	fi
+
 	echo
 	echo "Adding the content of the /personal folder"
 	echo
@@ -212,6 +221,7 @@ echo "- Deleting any files in /etc/skel"
 echo "- Getting the last version of bashrc in /etc/skel"
 echo "- Removing the old packages.x86_64 file from build folder"
 echo "- Copying the new packages.x86_64 file to the build folder"
+echo "- Adding packages from your personal repository - packages-personal-repo.x86_64"
 echo "- Changing group for polkit folder"
 tput sgr0
 echo "################################################################## "
@@ -230,12 +240,12 @@ echo
 	echo
 	echo "Copying the new packages.x86_64 file to the build folder"
 	cp -f ../archiso/packages.x86_64 $buildFolder/archiso/packages.x86_64
-
-############################################################################
-###########Add personalsoftware.x86_64 into packages.x86_64#################
-############################################################################
-    cat ../archiso/personalsoftware.x86_64 >> $buildFolder/archiso/packages.x86_64
-############################################################################
+	echo
+	
+	if [ $personalrepo == true ]; then
+		echo "Adding packages from your personal repository - packages-personal-repo.x86_64"
+		cat ../archiso/packages-personal-repo.x86_64 | sudo tee -a $buildFolder/archiso/packages.x86_64
+	fi
 
 	echo
 	echo "Changing group for polkit folder"
