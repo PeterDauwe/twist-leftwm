@@ -29,7 +29,7 @@ echo
 	desktop="leftwm"
 	dmDesktop="leftwm"
 
-	arcolinuxVersion='v22.03.05'
+	arcolinuxVersion='v22.03.06'
 
 	isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
 
@@ -134,6 +134,7 @@ tput setaf 2
 echo "Phase 3 :"
 echo "- Deleting the build folder if one exists"
 echo "- Git clone the latest ArcoLinux-iso from github"
+echo "- add our own repo + add the packages to packages.x86_64"
 tput sgr0
 echo "################################################################## "
 echo
@@ -144,6 +145,17 @@ echo
 	echo "Git clone the latest ArcoLinux-iso from github"
 	echo
 	git clone https://github.com/arcolinux/arcolinuxl-iso ../work
+	echo
+	echo "Adding our own repo to /etc/pacman.conf"
+	#nemesis-repo added to /etc/pacman.conf
+#echo '
+#[nemesis_repo]
+#SigLevel = Optional TrustedOnly
+#Server = https://erikdubois.github.io/$repo/$arch' | sudo tee -a ../work/archiso/pacman.conf
+#echo '
+#[nemesis_repo]
+#SigLevel = Optional TrustedOnly
+#Server = https://erikdubois.github.io/$repo/$arch' | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
 	echo
 	echo "Adding the content of the /personal folder"
 	echo
