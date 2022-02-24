@@ -157,7 +157,7 @@ tput setaf 2
 echo "Phase 3 :"
 echo "- Deleting the build folder if one exists"
 echo "- Git clone the latest ArcoLinux-iso from github"
-echo "- add our own repo + add the packages to packages.x86_64"
+echo "- add our own personal repo + add your packages to packages-personal-repo.x86_64"
 tput sgr0
 echo "################################################################## "
 echo
@@ -245,6 +245,7 @@ echo
 	if [ $personalrepo == true ]; then
 		echo "Adding packages from your personal repository - packages-personal-repo.x86_64"
 		cat ../archiso/packages-personal-repo.x86_64 | sudo tee -a $buildFolder/archiso/packages.x86_64
+	#  cat ../archiso/packages-personal-repo.x86_64 >> $buildFolder/archiso/packages.x86_64
 	fi
 
 	echo
