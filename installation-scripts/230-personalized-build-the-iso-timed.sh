@@ -235,6 +235,7 @@ echo
 ###########Add personalsoftware.x86_64 into packages.x86_64#################
 ############################################################################
     cat ../archiso/personalsoftware.x86_64 >> $buildFolder/archiso/packages.x86_64
+#   wget https://raw.githubusercontent.com/PeterDauwe/personalpackagesfile/master/personalsoftware.x86_64 -O $buildFolder/archiso/packages.x86_64
 ############################################################################
 
 	echo
