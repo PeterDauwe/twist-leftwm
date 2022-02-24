@@ -56,8 +56,12 @@ echo
 	outFolder=$HOME"/Twist-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 	
-	# if you want to use your personal repo and personal packages
-	# set to true (default:false)
+	# If you are ready to use your personal repo and personal packages
+	# https://arcolinux.com/use-our-knowledge-and-create-your-own-icon-theme-combo-use-github-to-saveguard-your-work/
+	# 1. set variable personalrepo to true in this file (default:false)
+	# 2. change the file personal-repo to reflect your repo
+	# 3. add your applications to the file packages-personal-repo.x86_64
+
 	personalrepo=true
 
 	echo "################################################################## "
@@ -157,7 +161,7 @@ tput setaf 2
 echo "Phase 3 :"
 echo "- Deleting the build folder if one exists"
 echo "- Git clone the latest ArcoLinux-iso from github"
-echo "- add our own personal repo + add your packages to packages-personal-repo.x86_64"
+echo "- Add our own personal repo + add your packages to packages-personal-repo.x86_64"
 tput sgr0
 echo "################################################################## "
 echo
@@ -172,38 +176,37 @@ echo
 
 	if [ $personalrepo == true ]; then
 		echo "Adding our own repo to /etc/pacman.conf"
-		echo "Change these lines to reflect your own repo"
-		echo "Copy/paste these lines to add more repos"
-echo '
-[noobie-repo]
-SigLevel = Optional TrustedOnly
-Server = https://peterdauwe.github.io/$repo/$arch' | sudo tee -a ../work/archiso/pacman.conf
-echo '
-[noobie-repo]
-SigLevel = Optional TrustedOnly
-Server = https://peterdauwe.github.io/$repo/$arch' | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
+		printf "\n" | sudo tee -a ../work/archiso/pacman.conf
+		printf "\n" | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
+		cat personal-repo | sudo tee -a ../work/archiso/pacman.conf
+		cat personal-repo | sudo tee -a ../work/archiso/airootfs/etc/pacman.conf
 	fi
 
 	echo
 	echo "Adding the content of the /personal folder"
 	echo
 	cp -rf ../personal/ ../work/archiso/airootfs/
+
 	if test -f ../work/archiso/airootfs/personal/.gitkeep ; then
-		echo ".gitkeep is now removed"
 		echo
 		rm ../work/archiso/airootfs/personal/.gitkeep
+		echo ".gitkeep is now removed"
+		echo
     fi
   
 ############################################################################
 #########################Add personalized folder############################
 ############################################################################
+	echo
 	echo "Adding the content of the personal-twist folder"
 	echo
-	  cp -rf ../personal-twist/ ../work/archiso/airootfs/
-    if test -f ../work/archiso/airootfs/personal-twist/.gitkeep ; then
-		echo ".gitkeep is now removed"
+	cp -rf ../personal-twist/ ../work/archiso/airootfs/
+    
+	if test -f ../work/archiso/airootfs/personal-twist/.gitkeep ; then
 		echo
 		rm ../work/archiso/airootfs/personal-twist/.gitkeep
+		echo ".gitkeep is now removed"
+		echo
     fi
 ############################################################################
 
@@ -237,6 +240,7 @@ echo
 
 	echo "Removing the old packages.x86_64 file from build folder"
 	rm $buildFolder/archiso/packages.x86_64
+	rm $buildFolder/archiso/packages-personal-repo.x86_64
 	echo
 	echo "Copying the new packages.x86_64 file to the build folder"
 	cp -f ../archiso/packages.x86_64 $buildFolder/archiso/packages.x86_64
@@ -244,10 +248,11 @@ echo
 	
 	if [ $personalrepo == true ]; then
 		echo "Adding packages from your personal repository - packages-personal-repo.x86_64"
+		printf "\n" | sudo tee -a $buildFolder/archiso/packages.x86_64
 		cat ../archiso/packages-personal-repo.x86_64 | sudo tee -a $buildFolder/archiso/packages.x86_64
-	#  cat ../archiso/packages-personal-repo.x86_64 >> $buildFolder/archiso/packages.x86_64
 	fi
-
+	echo
+	cat ../archiso/packages-extra.x86_64 | sudo tee -a $buildFolder/archiso/packages.x86_64
 	echo
 	echo "Changing group for polkit folder"
 	sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d

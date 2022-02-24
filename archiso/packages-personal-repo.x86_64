@@ -1,44 +1,4 @@
-########## PERSONAL CHOISES ###########
-atom
-brasero
-discord
-etcher-bin
-exa
-fish
-flameshot-git
-font-manager
-freetube-bin
-gimp
-gitahead-bin
-gmrun
-light
-meld
-python-pywal
-qt5-graphicaleffects
-rustup
-shell-color-scripts
-simplescreenrecorder
-smplayer
-starship
-sublime-text-4
-the_platinum_searcher-bin
-unclutter
-virtualbox
-virtualbox-host-modules-arch
-wttr
-xfce4-clipman-plugin
-yt-dlp
-zathura
-zathura-cb
-zathura-djvu
-zathura-pdf-mupdf
+########## PERSONAL REPO ###########
 
-## Special for btrfs and snapper
-btrfs-assistant
-snap-pac
-snap-pac-grub
-snap-sync
-snapper
-snapper-gui-git
-snapper-rollback
-snapper-support
+noobie-juno-theme
+noobie-wallpaper1

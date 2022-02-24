@@ -1,0 +1,17 @@
+# An example of a custom package repository.  See the pacman manpage for
+# tips on creating your own repositories.
+#[custom]
+#SigLevel = Optional TrustAll
+#Server = file:///home/custompkgs
+#or
+#[custom]
+#SigLevel = Optional TrustAll
+#Server = https://NAMEHERE.github.io/$repo/$arch
+
+[noobie-repo]
+SigLevel = Optional TrustAll
+Server = https://peterdauwe.github.io/$repo/$arch
+
+[nemesis_repo]
+SigLevel = Optional TrustAll
+Server = https://erikdubois.github.io/$repo/$arch
