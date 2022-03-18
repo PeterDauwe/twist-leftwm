@@ -8,6 +8,10 @@
 #SigLevel = Optional TrustAll
 #Server = https://NAMEHERE.github.io/$repo/$arch
 
+[nemesis_repo]
+SigLevel = Optional TrustedOnly
+Server = https://erikdubois.github.io/$repo/$arch
+
 [aries_repo]
 SigLevel = Optional TrustAll
-Server = https://peterdauwe.github.io/$repo/$arch
+Server = https://PeterDauwe.github.io/$repo/$arch
